@@ -1,0 +1,92 @@
+body {
+    background: white;
+    margin: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 150px 800px 150px;
+    grid-template-rows: 60px 40px 400px 60px;
+    grid-gap: 2px 2px;
+    padding: 2px;
+    text-align: center;
+    font: 20px sans-serif;
+    color: white;
+    line-height: 50px;
+}
+
+.topo {
+    grid-area: 1/1/2/4;
+    background: #08460b;
+}
+
+.opcao {
+    grid-area: 2/1/3/4;
+    background: #87bb7c;
+    line-height: 40px;
+}
+
+.menu{
+    margin: 0; 
+    padding: 0;
+    font: 18px sans-serif;
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a{
+    color:#333; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;}
+
+.menu li a:hover{
+    background:#333;
+    color:#fff;
+
+}
+
+.menu li ul{
+    position:absolute;
+    background-color:#fff;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    
+}
+
+.principal {
+    grid-area: 3/2/4/3;
+    background: #ceeec8;
+    text-align: left ;
+    font: 12px sans-serif;
+    color: black;
+}
+
+.esquerdo {
+    grid-area: 3/1/4/2;
+    background: #7b817d;
+}
+
+.direito {
+    grid-area: 3/3/4/4;
+    background: #767372;
+}
+
+.rodape {
+    grid-area: 4/1/5/4;
+    background: #08460b;
+    font-style: italic;
+}
+
